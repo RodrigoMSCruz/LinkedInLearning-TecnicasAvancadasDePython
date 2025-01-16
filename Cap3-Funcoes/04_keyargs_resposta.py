@@ -2,7 +2,7 @@
 
 
 # Use apenas argumentos nomeados para garantir clareza de código
-def minha_funcao(arg1, arg2, *, suprimir_exceptions=False):
+def minha_funcao(arg1, arg2, *, suprimir_exceptions = False):
     print(arg1, arg2, suprimir_exceptions)
 
 
