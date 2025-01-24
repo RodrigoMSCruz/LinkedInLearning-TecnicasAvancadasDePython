@@ -7,9 +7,17 @@ def main():
 
     # TODO: Crie um set com as temperaturas em Fahrenheit
     # Dica: Fórmula pra converter para Fahrenheit -> (t * 9/5) + 32
+    
+    ftemp_lista = [(t * 9/5) + 32 for t in ctemps]
+    ftemp_set = {(t * 9/5) + 32 for t in ctemps}
 
+    print(ftemp_lista)
+    print(ftemp_set)
+    
     # TODO: Crie um set a partir de uma string
-
+    frase = "O primeiro podcast Brasileiro sobre ciência de dados"
+    letras = {c.upper() for c in frase if not c.isspace()}
+    print(letras)
 
 if __name__ == "__main__":
     main()
